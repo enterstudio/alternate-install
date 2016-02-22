@@ -17,8 +17,8 @@ function core_install() {
 
 function cloud_install() {
 	apt-get -y --force-yes install parrot-cloud parrot-tools-cloud
-	wget -qO - http://dasaweb.net/parrot/hostname.txt > /etch/hostname
-	wget -qO - http://dasaweb.net/parrot/hosts.txt > /etch/hosts
+	wget -qO - http://dasaweb.net/parrot/hostname.txt > /etc/hostname
+	wget -qO - http://dasaweb.net/parrot/hosts.txt > /etc/hosts
 }
 
 if [ `whoami` == "root" ]; then
